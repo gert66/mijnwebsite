@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sjamaan Verhoeff</title>
     <style>
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    background-color: #f0f0f0; /* Optioneel: achtergrondkleur */
-    overflow: hidden; /* Voorkomt scrollbalken */
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Zorgt ervoor dat de afbeelding het hele scherm vult */
-}
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Voorkomt scrollbalken */
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Optioneel: achtergrondkleur */
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Zorgt ervoor dat de afbeelding het scherm vult zonder vervorming */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     </style>
 </head>
 <body>
